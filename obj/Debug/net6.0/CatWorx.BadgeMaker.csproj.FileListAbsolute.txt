@@ -34,3 +34,4 @@ C:\Users\hilde\classwork\CatWorx.BadgeMaker - Copy\bin\Debug\net6.0\runtimes\win
 C:\Users\hilde\classwork\CatWorx.BadgeMaker - Copy\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 C:\Users\hilde\classwork\CatWorx.BadgeMaker - Copy\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\hilde\classwork\CatWorx.BadgeMaker - Copy\obj\Debug\net6.0\CatWorx.BadgeMaker.csproj.CopyComplete
+C:\Users\hilde\classwork\CatWorx.BadgeMaker - Copy\bin\Debug\net6.0\Newtonsoft.Json.dll

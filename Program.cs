@@ -7,8 +7,11 @@ namespace CatWorx.BadgeMaker
       {
         static void Main(string[] args) 
           {
-            List<Employee> employees = GetEmployees();
-            Util.PrintEmployees(employees);
+            List<Employee> employees = new List<Employee>();
+            
+            employees = GetEmployees();
+
+            Util.MakeBadges(employees);
             Util.MakeCSV(employees);
           }
         static List<Employee> GetEmployees() 

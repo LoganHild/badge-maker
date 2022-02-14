@@ -11,8 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace CatWorx.BadgeMaker {
     class PeopleFetcher
-    {
-        //code from GetEmployees() in Program.cs
+    {   
         public static List<Employee> GetEmployees() 
           {
 
@@ -52,10 +51,6 @@ namespace CatWorx.BadgeMaker {
                 string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
                 JObject json = JObject.Parse(response);
                 foreach (JToken token in json.SelectToken("results")) {
-                    // Console.WriteLine(token.SelectToken("name.first"));
-                    // Console.WriteLine(token.SelectToken("name.last"));
-                    // Console.WriteLine(token.SelectToken("id.value"));
-                    // Console.WriteLine(token.SelectToken("picture.large"));
                     Employee emp = new Employee
                     (
                         token.SelectToken("name.first").ToString(),
@@ -66,9 +61,6 @@ namespace CatWorx.BadgeMaker {
                     );
                     employees.Add(emp);
                 }
-                    // Console.WriteLine(json.SelectToken("results"));
-                // }
-                
             }
             return employees;
         }

@@ -8,6 +8,8 @@ namespace CatWorx.BadgeMaker
         static void Main(string[] args) 
           {
             List<Employee> employees = new List<Employee>();
+
+
             Console.WriteLine("Would you like to fetch data from the API? (yes/no)");
             string answer = Console.ReadLine();
             if (answer == "yes") {

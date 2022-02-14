@@ -11,10 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace CatWorx.BadgeMaker {
     class PeopleFetcher
-    {
-        
-        //code from GetEmployees() in Program.cs
-        
+    {   
         public static List<Employee> GetEmployees() 
           {
 

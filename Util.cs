@@ -41,8 +41,8 @@ namespace CatWorx.BadgeMaker
                     }
             }
 
-        public static void MakeBadges(List<Employee> employees) 
-            {
+            public static void MakeBadges(List<Employee> employees) 
+                {
                 // Layout variables
                 int BADGE_WIDTH = 669;
                 int BADGE_HEIGHT = 1044;
@@ -62,7 +62,7 @@ namespace CatWorx.BadgeMaker
                 int EMPLOYEE_NAME_HEIGHT = 100;
 
                 int EMPLOYEE_ID_START_X = 0;
-                int EMPLOYEE_ID_START_Y = 960;
+                int EMPLOYEE_ID_START_Y = 690;
                 int EMPLOYEE_ID_WIDTH = BADGE_WIDTH;
                 int EMPLOYEE_ID_HEIGHT = 100;
 

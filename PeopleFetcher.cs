@@ -49,22 +49,22 @@ namespace CatWorx.BadgeMaker {
             using (WebClient client = new WebClient())
             {
                 //Image example
-                string response = client.DownloadString("https://randomuser.me/api/?results=10&inc=name,id,picture");
+                string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
                 JObject json = JObject.Parse(response);
                 foreach (JToken token in json.SelectToken("results")) {
                     // Console.WriteLine(token.SelectToken("name.first"));
                     // Console.WriteLine(token.SelectToken("name.last"));
-                    Console.WriteLine(token.SelectToken("id.value"));
+                    // Console.WriteLine(token.SelectToken("id.value"));
                     // Console.WriteLine(token.SelectToken("picture.large"));
-                    Regex rgx = new Regex("^[A-Za-z0-9_.]+$");
                     Employee emp = new Employee
                     (
                         token.SelectToken("name.first").ToString(),
                         token.SelectToken("name.last").ToString(),
-                        Int32.Parse(token.SelectToken("id.value").ToString().Replace("rgx", "")),
+                        Int32.Parse(token.SelectToken("id.value").ToString().Replace("-", "")),
                         token.SelectToken("picture.large").ToString()
                         
                     );
+                    employees.Add(emp);
                 }
                     // Console.WriteLine(json.SelectToken("results"));
                 // }

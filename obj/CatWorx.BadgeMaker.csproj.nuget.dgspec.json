@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker\\CatWorx.BadgeMaker.csproj": {}
+    "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker - Copy\\CatWorx.BadgeMaker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker\\CatWorx.BadgeMaker.csproj": {
+    "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker - Copy\\CatWorx.BadgeMaker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker\\CatWorx.BadgeMaker.csproj",
+        "projectUniqueName": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker - Copy\\CatWorx.BadgeMaker.csproj",
         "projectName": "CatWorx.BadgeMaker",
-        "projectPath": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker\\CatWorx.BadgeMaker.csproj",
+        "projectPath": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker - Copy\\CatWorx.BadgeMaker.csproj",
         "packagesPath": "C:\\Users\\hilde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker\\obj\\",
+        "outputPath": "C:\\Users\\hilde\\classwork\\CatWorx.BadgeMaker - Copy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hilde\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
